@@ -1,0 +1,46 @@
+fold,model,level,MAE,RMSE,MAPE,sMAPE,WAPE,Bias
+1,Naive (28-day mean),Store-item (500),14.303,18.979,20.261,22.861,21.29,-18.646
+1,Naive (28-day mean),Store (10),656.21,793.638,18.259,20.683,19.535,-18.646
+1,Naive (28-day mean),Total (1),6560.563,7777.305,18.246,20.661,19.531,-18.646
+1,Seasonal average (8 wks),Store-item (500),16.689,20.535,23.838,27.779,24.842,-24.379
+1,Seasonal average (8 wks),Store (10),818.927,866.81,24.112,27.581,24.379,-24.379
+1,Seasonal average (8 wks),Total (1),8189.272,8495.878,24.116,27.574,24.379,-24.379
+1,Seasonal naive YoY×growth,Store-item (500),9.126,11.786,15.922,15.602,13.584,-0.377
+1,Seasonal naive YoY×growth,Store (10),71.762,93.804,2.176,2.181,2.136,-0.377
+1,Seasonal naive YoY×growth,Total (1),346.775,537.639,1.019,1.016,1.032,-0.377
+1,ETS per series,Store-item (500),10.574,13.762,15.819,17.384,15.739,-13.514
+1,ETS per series,Store (10),453.942,511.28,13.228,14.339,13.514,-13.514
+1,ETS per series,Total (1),4539.416,5010.325,13.16,14.245,13.514,-13.514
+1,Global LightGBM,Store-item (500),6.57,8.491,11.616,11.133,9.779,0.995
+1,Global LightGBM,Store (10),86.362,110.085,2.578,2.565,2.571,0.995
+1,Global LightGBM,Total (1),799.731,960.337,2.374,2.367,2.381,0.995
+2,Naive (28-day mean),Store-item (500),11.081,14.581,19.417,17.33,16.415,5.997
+2,Naive (28-day mean),Store (10),446.08,556.107,14.331,13.219,13.216,5.997
+2,Naive (28-day mean),Total (1),4455.354,5426.936,14.294,13.194,13.2,5.997
+2,Seasonal average (8 wks),Store-item (500),8.466,10.986,14.684,13.726,12.541,3.069
+2,Seasonal average (8 wks),Store (10),277.742,313.271,8.394,8.164,8.229,3.069
+2,Seasonal average (8 wks),Total (1),2775.689,3026.73,8.356,8.137,8.224,3.069
+2,Seasonal naive YoY×growth,Store-item (500),9.176,11.87,15.89,15.599,13.592,-0.471
+2,Seasonal naive YoY×growth,Store (10),73.594,100.845,2.263,2.283,2.18,-0.471
+2,Seasonal naive YoY×growth,Total (1),322.739,612.944,0.966,0.982,0.956,-0.471
+2,ETS per series,Store-item (500),9.595,12.365,16.987,15.187,14.213,8.204
+2,ETS per series,Store (10),355.062,411.752,11.274,10.501,10.519,8.204
+2,ETS per series,Total (1),3535.122,4008.06,11.183,10.426,10.473,8.204
+2,Global LightGBM,Store-item (500),6.47,8.361,11.457,10.998,9.585,0.617
+2,Global LightGBM,Store (10),66.32,83.442,1.983,1.971,1.965,0.617
+2,Global LightGBM,Total (1),499.535,621.884,1.45,1.442,1.48,0.617
+3,Naive (28-day mean),Store-item (500),11.754,15.413,26.938,22.253,21.514,12.905
+3,Naive (28-day mean),Store (10),507.173,622.379,21.449,18.451,18.567,12.905
+3,Naive (28-day mean),Total (1),5042.041,6093.969,21.275,18.307,18.458,12.905
+3,Seasonal average (8 wks),Store-item (500),11.662,15.585,26.652,21.794,21.347,17.021
+3,Seasonal average (8 wks),Store (10),466.762,622.168,19.585,16.64,17.088,17.021
+3,Seasonal average (8 wks),Total (1),4649.4,6085.196,19.446,16.539,17.021,17.021
+3,Seasonal naive YoY×growth,Store-item (500),8.342,10.862,18.152,17.608,15.27,-0.229
+3,Seasonal naive YoY×growth,Store (10),72.525,124.052,2.711,2.757,2.655,-0.229
+3,Seasonal naive YoY×growth,Total (1),335.208,1000.886,1.204,1.254,1.227,-0.229
+3,ETS per series,Store-item (500),10.042,13.419,22.985,19.434,18.381,11.212
+3,ETS per series,Store (10),358.429,506.156,15.323,13.285,13.122,11.212
+3,ETS per series,Total (1),3549.302,4949.325,15.101,13.096,12.994,11.212
+3,Global LightGBM,Store-item (500),5.872,7.597,13.108,12.379,10.748,1.329
+3,Global LightGBM,Store (10),63.273,80.804,2.432,2.396,2.316,1.329
+3,Global LightGBM,Total (1),502.87,625.874,1.889,1.863,1.841,1.329
