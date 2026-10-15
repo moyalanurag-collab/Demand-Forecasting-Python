@@ -1,0 +1,6 @@
+,safety stock (units),vs YoY rule,vs naive
+Naive (28-day mean),33174.01,36.59,0.0
+Seasonal average (8 wks),32566.72,34.09,-1.83
+Seasonal naive YoY×growth,24288.06,0.0,-26.79
+ETS per series,26775.48,10.24,-19.29
+Global LightGBM,17143.06,-29.42,-48.32
