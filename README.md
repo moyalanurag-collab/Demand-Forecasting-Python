@@ -1,6 +1,6 @@
 # Retail Demand Forecasting: Baselines vs ARIMA vs ETS vs Prophet vs Machine Learning
 
-**Author: Anurag Moyal** · Data Analytics Portfolio Project
+Author: Anurag Moyal
 
 Forecasting the next 90 days of retail demand for **10 stores × 50 items (500 daily series, 913,000 observations, 2013–2017)**, comparing
 simple baselines, classical statistics (ETS, SARIMAX), Prophet and a global gradient-boosting model, with **rolling-origin backtesting**, proper error
@@ -36,7 +36,7 @@ Executive write-up: `reports/Executive_Summary.md`. Metrics tables: `reports/res
 | ETS per series | 16.1 % | 18.6 % | 13.18 |
 | Naive (28-day mean) | 19.7 % | 22.2 % | 16.32 |
 
-**The honest finding:** the best model depends on the level. At total and store level a well-built *"same weekday last year × recent growth"* rule is as good as
+**Key takeaway:** the best model depends on the level. At total and store level a well-built *"same weekday last year × recent growth"* rule is as good as
 or better than any fitted model (demand has a very stable yearly shape). At the noisy store-item level the global LightGBM model cuts error by ~29 % versus that rule
 and ~49 % versus naive, which translates to about **29 % less safety stock** for the same service level. Fitted models also add value when seasonality is *not* this stable.
 
@@ -70,10 +70,6 @@ Or double-click `run_all.bat` on Windows.
 * No holiday calendar, price or promotion information is available in the data.
 * Prophet and SARIMAX use sensible fixed settings, not exhaustive tuning (SARIMAX order was not selected by search).
 * The 2018 forecast cannot be verified; its uncertainty band uses the backtest RMSE of the total forecast.
-
-## CV bullets (edit to taste)
-* *Built a demand-forecasting pipeline on 913k daily retail observations (500 store-item series) comparing naive, ETS, SARIMAX, Prophet and LightGBM with rolling-origin backtesting; a global LightGBM model cut item-level WAPE from 14.1 % to 10.0 % versus a seasonal year-over-year benchmark and 19.7 % for naive.*
-* *Showed that a simple year-over-year growth rule beats ML at aggregate level (MAPE 2.2 % vs 3.3 %) while ML wins at item level, and translated the accuracy gain into a ~29 % safety-stock reduction.*
 
 ## Data source
 "Store Item Demand Forecasting Challenge" (Kaggle competition `demand-forecasting-kernels-only`); this copy comes from the public GitHub repository
